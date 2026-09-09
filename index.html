@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page Wireframe</title>
+  <link rel="stylesheet" href="styles\siteStyle.css">
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <a href=""><img class="logoimg" src="imgs\LogoSmall.png" alt="Company Logo"></a>
+      </div>
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation">
+        &#9776;
+      </button>
+      <nav class="nav-links" id="nav-links">
+        <a href="#about" class="nav-item">About</a>
+        <a href="#services" class="nav-item">Services</a>
+        <a href="#gallery" class="nav-item">Gallery</a>
+        <a href="#testimonials" class="nav-item">Testimonials</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div></div>
+    <!-- About / Hero Section -->
+    <section id="about" class="section hero-section">
+      <div class="container hero-grid">
+        <div class="hero-image">
+          <img src="imgs\placeholder1.jpg" alt="About Picture">
+        </div>
+        <div class="hero-text">
+          <!-- <h1>About Us</h1> -->
+          <h1>Quality Glass Services, Backed by Over 25 Years of Experience</h1>
+
+          <p>
+    At <strong>GRN Glass</strong>, we provide professional glass services in
+    <strong>Walkerton, Ontario</strong> and the surrounding area. Owned and operated by
+    <strong>Jonah Misener</strong>, GRN Glass brings over 25 years of experience
+    working with both commercial and residential clients.
+  </p>
+
+  <p>
+    From custom installations to repairs, we provide quality glass solutions
+    designed to fit your needs. Our services include:
+  </p>
+
+  <ul>
+    <li>Frameless glass showers</li>
+    <li>Glass railings</li>
+    <li>Commercial storefronts</li>
+    <li>Custom-cut glass and mirrors</li>
+    <li>Screen repairs</li>
+  </ul>
+
+  <p>
+    With decades of hands-on experience, we take pride in quality workmanship,
+    attention to detail, and reliable service.
+  </p>
+
+  <p>
+    <strong>
+      Looking for glass services in Walkerton, Ontario?
+    </strong>
+    Contact GRN Glass to discuss your next project.
+  </p>
+
+
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services-section">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="cards-grid">
+          <div class="card">
+            <img src="imgs\Placeholder2.jpg" alt="Image of a Frameless glass shower">
+            <h3>Frameless Showers</h3>
+            <p>Give your bathroom a clean, modern look with a frameless glass shower door. It creates an open, spacious feel while showcasing your tile and shower design without bulky frames getting in the way.</p>
+          </div>
+          <div class="card">
+            <img src="imgs\Placeholder3.jpg" alt="image of glass railings">
+            <h3>Glass Railings</h3>
+            <p>Add a modern, open feel to your home or business with custom glass railings. Durable and stylish, they provide safety without blocking your view or natural light.</p>
+          </div>
+          <div class="card">
+            <img src="imgs\Placeholder4.jpg" alt="Image of custom glass storefront door">
+            <h3>Storefronts</h3>
+            <p>Make a great first impression with a custom glass storefront designed for your business. Clean, professional, and built to let natural light in while showcasing your space.</p>
+          </div>
+          <div class="card">
+            <img src="imgs\Placeholder5.jpg" alt="Image of custom cut bathroom mirror">
+            <h3>Custom Cut Glass and Mirrors</h3>
+            <p>Get the perfect fit for your space with custom-cut mirrors and glass. Whether it’s a unique shape, replacement pane, or finishing touch, we’ll cut it to your exact needs.</p>
+          </div>
+          <div class="card">
+            <img src="imgs\Placeholder6.png" alt="Image of a screen being repaired">
+            <h3>Screen Repairs</h3>
+            <p>Keep your windows and doors looking their best with professional screen repairs. We can repair damaged screens and help get them back to working properly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Carousel Section -->
+    <section id="gallery" class="section gallery-section">
+      <div class="container">
+        <h2>Gallery</h2>
+        <div class="carousel-wrapper">
+          <button class="carousel-btn prev-btn" id="prev-btn">&#10094;</button>
+          <div class="carousel-container">
+            <div class="carousel-track" id="carousel-track">
+              <div class="carousel-slide">
+                <img src="imgs\placeholder1.jpg" alt="Gallery 1">
+              </div>
+              <div class="carousel-slide">
+                <img src="imgs\Placeholder2.jpg" alt="Gallery 2">
+              </div>
+              <div class="carousel-slide">
+                <img src="imgs\Placeholder5.jpg" alt="Gallery 3">
+              </div>
+            </div>
+          </div>
+          <button class="carousel-btn next-btn" id="next-btn">&#10095;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials-section">
+      <div class="container">
+        <h2>Testimonials</h2>
+        <div class="testimonial-card">
+          <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor."</p>
+          <p class="author">- Jane Doe, Client</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Desktop Side Action Button & Slide-out Overlay -->
+  <button class="side-action-btn" id="side-toggle-btn" aria-label="Open Contact Overlay">
+    Contact
+  </button>
+
+  <div class="overlay" id="contact-overlay">
+    <div class="overlay-content">
+      <button class="close-btn" id="close-overlay-btn">&times;</button>
+      <h3>Get In Touch</h3>
+      <p>Need assistance or a quote? Choose an option below:</p>
+      <div class="overlay-actions">
+        <button class="action-btn call-action-btn">Call Us</button>
+        <button class="action-btn quote-action-btn">Get Quote</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Sticky Bottom Footer -->
+  <div class="mobile-sticky-footer">
+    <button class="action-btn call-action-btn">
+      <span class="icon">📞</span> Call Us
+    </button>
+    <button class="action-btn quote-action-btn">
+      <span class="icon">📋</span> Get Quote
+    </button>
+  </div>
+
+  <!-- Main Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-left">
+        <p>&copy; 2026 GRN Glass. All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact-overlay" class="trigger-overlay">Contact</a></li>
+          <li><a href="#faqs">FAQs</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts\siteScript.js"></script>
+</body>
+</html>
