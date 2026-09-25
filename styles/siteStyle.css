@@ -365,6 +365,22 @@ main ul{
   padding-inline-start: 40px;
   font-weight: bold;
 }
+
+.faq-head{
+  padding-bottom: 5%;
+  text-decoration: underline;
+}
+.section-intro,.faq-item{
+  padding-bottom: 3%;
+}
+.faq-item h2{
+  color: #024f34;
+  text-align: left;
+}
+
+.firstItem{
+    padding-top: 8%;
+}
 /* Responsive Navigation Switch */
 @media (max-width: 768px) {
   .hamburger {
@@ -402,4 +418,18 @@ main ul{
   .side-action-btn {
     display: none;
   }
+
+  .faq-section{
+    text-align: center;
+  }
+  .section-intro{
+    padding-top: 6%;
+    padding-bottom: 6%;
+    background-color: #087A52;
+    color: white;
+  }
+  .logoimg{
+    width: 200%;
+  }
+  
 }
