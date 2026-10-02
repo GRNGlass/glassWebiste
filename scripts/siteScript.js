@@ -46,11 +46,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+
+
   // Gallery Carousel Logic
-  const track = document.getElementById('carousel-track');
+  let track = document.getElementById('carousel-track');
+  let nextBtn = document.getElementById('next-btn');
+  let prevBtn = document.getElementById('prev-btn');
+   //Sets Image carousel
+  setTrack(track,nextBtn,prevBtn);
+
+
+
+  let track1 = document.getElementById('carousel-track2');
+  let nextBtn2 = document.getElementById('next-btn2');
+  let prevBtn2 = document.getElementById('prev-btn2');
+
+  //Sets Testimonial carousel
+  setTrack(track1,nextBtn2,prevBtn2);
+
+
+function setTrack(track, nextBtn, prevBtn){
   const slides = Array.from(track.children);
-  const nextBtn = document.getElementById('next-btn');
-  const prevBtn = document.getElementById('prev-btn');
   let currentIndex = 0;
 
   const updateCarousel = (index) => {
@@ -66,6 +82,37 @@ document.addEventListener('DOMContentLoaded', () => {
     currentIndex = (currentIndex - 1 + slides.length) % slides.length;
     updateCarousel(currentIndex);
   });
+
+}
+
+  // const slides = Array.from(track.children);
+  // const nextBtn = document.getElementById('next-btn');
+  // const prevBtn = document.getElementById('prev-btn');
+  // let currentIndex = 0;
+
+  // const updateCarousel = (index) => {
+  //   track.style.transform = `translateX(-${index * 100}%)`;
+  // };
+
+  // nextBtn.addEventListener('click', () => {
+  //   currentIndex = (currentIndex + 1) % slides.length;
+  //   updateCarousel(currentIndex);
+  // });
+
+  // prevBtn.addEventListener('click', () => {
+  //   currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+  //   updateCarousel(currentIndex);
+  // });
+
+
+
+
+
+
+
+
+
+
 
   // Anti-Spambot Obfuscated Call & Quote Actions
   // Obfuscated email & phone details (encoded in base64 / assembled via code)
